@@ -1,0 +1,22 @@
+<div class="container">
+  <h5>Login</h5>
+  <form id="testeMaterialize">
+    <div class="row">
+      <div class="input-field">
+        <input [(ngModel)]="usuario.nome" id="usuario" type="text" class="validate" pattern="[A-Za-zÀ-ú\s]+$" required minlength="2" maxlength="20">
+        <label class="active" for="usuario" data-error="Preencha o campo Usuário">Usuário</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field">
+        <input [(ngModel)]="usuario.senha" id="senha" type="password" class="validate">
+        <label class="active" for="senha">Senha</label>
+      </div>
+    </div>
+
+    <button class="btn waves-effect waves-light" type="submit" name="action" (click)="fazerLogin()">Login
+      <i class="material-icons right">send</i>
+    </button>
+  </form>
+</div>

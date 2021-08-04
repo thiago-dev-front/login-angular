@@ -1,0 +1,15 @@
+.container {
+  max-width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #f4f4f4;
+  padding: 10px 20px;
+  min-height: 280px;
+
+  h5 {
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+}
